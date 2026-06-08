@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify</title>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <div class="container">
+        <nav class="navbar">
+            <ul class="nav-left">
+                <li><a href="#products">Shop</a></li>
+
+                <li class="dropdown">
+                    <a href="#products">
+                        Products
+                        <i class="ri-arrow-down-s-line"></i>
+                    </a>
+                </li>
+
+                <li><a href="#">Fertilizer</a></li>
+                <li><a href="#">Guide</a></li>
+            </ul>
+
+            <div class="logo">
+                <img src="assets/icons/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav-icons">
+                <div class="nav-action">
+                    <button class="cart-link nav-icon-btn" type="button" aria-label="Open cart" data-open-cart>
+                        <img src="assets/icons/shopping.png" alt="Shopping Icon">
+                        <span class="cart-count" data-cart-count>0</span>
+                    </button>
+
+                    <div class="shop-panel" data-cart-panel>
+                        <div class="shop-panel-header">
+                            <h3>Cart</h3>
+                            <button type="button" data-close-panel aria-label="Close cart">x</button>
+                        </div>
+                        <div class="shop-panel-list" data-cart-list></div>
+                        <div class="shop-panel-footer">
+                            <span>Total</span>
+                            <strong data-cart-total>$0</strong>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/icons/user.png" alt="User Icon">
+                <div class="nav-action">
+                    <button class="likes-link nav-icon-btn" type="button" aria-label="Open liked products" data-open-likes>
+                        <span class="header-heart" aria-hidden="true">&#9829;</span>
+                        <span class="likes-count" data-likes-count>0</span>
+                    </button>
+
+                    <div class="shop-panel likes-panel" data-likes-panel>
+                        <div class="shop-panel-header">
+                            <h3>Liked</h3>
+                            <button type="button" data-close-panel aria-label="Close likes">x</button>
+                        </div>
+                        <div class="shop-panel-list" data-likes-list></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+            <h1>
+                Happiness <br>
+                blooms from <br>
+                within
+            </h1>
+
+            <p>
+                Our environment, the world in which we live and
+                work, is a mirror of our attitudes and expectations.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-light">
+                    Shop now
+                </a>
+                <a href="#" class="btn-link">
+                    Explore plants
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-gallery">
+            <div class="left-column">
+                <div class="small-card">
+                    <span class="badge">
+                        New
+                    </span>
+                    <img src="assets/images/image 3.png" alt="Bird's Nest Fern">
+                </div>
+
+                <div class="small-card-2">
+                    <span class="badge">
+                        Popular
+                    </span>
+                    <img src="assets/images/image 2.png" alt="Large Majesty Palm">
+                </div>
+            </div>
+
+            <div class="big-card">
+                <span class="badge">
+                    Featured
+                </span>
+                <img src="assets/images/image 1.png" alt="Peperomia Ginny">
+                  <div class="overlay">
+
+                    <h3>
+                        Peperomia Ginny
+                    </h3>
+
+                    <p>
+                        A compact indoor plant with soft green leaves.
+                        Easy to care for and perfect for desks,
+                        shelves and small bright rooms.
+                        Price: $25.
+                    </p>
+
+                    <a href="#" class="read-btn">
+                        READ MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="featured" id="products">
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured</h2>
+            <button class="section-link" id="featured-toggle" type="button" aria-expanded="false">
+                view all
+            </button>
+        </div>
+
+        <div class="products" id="products-list" data-featured-list="true" aria-live="polite"></div>
+    </div>
+
+</section>
+
+<section class="search-section" id="search">
+    <div class="container">
+        <div class="search-box">
+            <button class="filter-btn">
+                <img src="assets/icons/line-settings.png" alt="Filter Icon">
+            </button>
+            <input
+                id="product-search"
+                type="text"
+                placeholder="Search flowers..."
+            >
+            <button class="search-btn">
+                <img src="assets/icons/search2.png" alt="Search Icon">
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="arrivals">
+    <div class="container">
+        <div class="section-header">
+            <h2>Colorful New Arrivals</h2>
+            <a href="#">view all</a>
+        </div>
+
+        <div class="arrival-grid">
+
+            <div class="arrival-card featured-flower">
+                <img src="assets/images/image 14.png" alt="Calathea Orbifolia">
+                <div class="arrival-overlay">
+                    <h3>Calathea Orbifolia</h3>
+                    <p>$38</p>
+                    <a href="#">
+                        more information &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <div class="arrival-card">
+                <img src="assets/images/image 15.png" alt="Pink Anthurium">
+                <div class="arrival-name">
+                    <h3>Pink Anthurium</h3>
+                    <span>$42</span>
+                </div>
+            </div>
+
+            <div class="arrival-card">
+                <img src="assets/images/image 16.png" alt="Peace Lily">
+                <div class="arrival-name">
+                    <h3>Peace Lily</h3>
+                    <span>$34</span>
+                </div>
+            </div>
+
+            <div class="arrival-card">
+                <img src="assets/images/image 17.png" alt="Croton Petra">
+                <div class="arrival-name">
+                    <h3>Croton Petra</h3>
+                    <span>$29</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stands">
+    <div class="container">
+        <div class="stands-header">
+            <h2>Plant stands</h2>
+            <a href="#">
+                more →
+            </a>
+        </div>
+
+        <div class="stands-grid">
+            <div class="stand-card">
+                <img src="assets/images/image 5.png" alt="">
+            </div>
+
+            <div class="stand-card">
+                <img src="assets/images/image 6.png" alt="">
+            </div>
+
+            <div class="stand-card">
+                <img src="assets/images/image 7.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="shipping">
+     <div class="container">
+        <div class="shipping-banner">
+            <img src="assets/images/image 13.png" alt="">
+
+            <div class="shipping-content">
+                <h2>Free Shipping Services</h2>
+                  <p>*only for the same region</p>
+                    <div class="shipping-contact">
+
+                    <div class="contact-item">
+                        <img src="assets/icons/phone.png" alt="">
+                         <span>+62 1189-2719-00</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <img src="assets/icons/mail.png" alt="">
+                        <span>order@platify.co</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="location">
+    <div class="container">
+        <div class="location-map">
+            <iframe
+                src="https://www.google.com/maps?q=Bunyodkor%20shoh%20ko'chasi%2039,%20100097,%20Toshkent,%20Uzbekistan&output=embed"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="visit-card">
+                <h3>Visit us</h3>
+                <p>
+                    Gekikara Street 16, Atalanta <br>
+                    1327 Block M <br>
+                    Mardial, Sigure <br>
+                    T26 OT2
+                </p>
+
+                <p>
+                    <a href="#">Open day</a> : 11am-5:30pm everyday
+                </p>
+            </div>
+
+            <a href="#" class="direction-btn">
+                ⊙ GET DIRECTIONS
+            </a>
+        </div>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
